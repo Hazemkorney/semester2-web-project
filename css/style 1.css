@@ -1,0 +1,129 @@
+body {
+    margin: 0px;
+}
+
+/* heading styles starts */
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 100px 0px;
+    color: white;
+
+}
+
+.heading span {
+    font-size: 3.5rem;
+    background: #008891;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    margin: right 1px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+
+}
+
+.heading span.space {
+    background: none;
+}
+
+/* heading styles starts */
+
+/* primary radio styles starts */
+.primaryradio {
+    display: flex;
+    position: static;
+    background-color: none;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.radio1,.radio2
+{
+    margin-right: 5px;
+}
+/* primary radio styles ends */
+
+.container {
+    /* background-color: rgba(58, 56, 56, 0); */
+    /* height: 100vh; */
+    background-image: url("../image/flyin.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+/* form styles starts */
+
+.form {
+    display: flex; 
+    align-items: flex-end;
+}
+
+.from,
+.To,
+.Depart,
+.Return,
+.Travellers,
+.class {
+    margin: 10px 10px 0px 10px  ;
+
+}
+
+
+.form-container {
+
+    position: static;
+    padding: 60px;
+    background-color: #3a4a68c9;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+
+}
+
+
+
+input {
+
+    padding: 20px;
+    border-radius: 12px;
+    border: none;
+
+}
+
+/* علامة اليد عند الزر */
+label {
+    font-size: larger;
+}
+
+.radio, label,
+input:checked {
+    cursor: pointer;
+}
+
+/* Change the color of the button*/
+input[type="radio"]:checked {
+    accent-color: #FEC524;
+
+}
+
+button
+{
+    padding: 14px;
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: cadetblue;
+    transition: .5s;
+    cursor: pointer;
+    color: white;
+}
+button:hover{
+background-color: #808c91;
+box-shadow: 0px 0px 6px 1px white
+
+}
+/* form styles ends */

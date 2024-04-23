@@ -1,0 +1,76 @@
+/* heading styles starts */
+.heading {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 100px 0px;
+    color:cadetblue;
+
+}
+
+.heading span {
+    font-size: 3.5rem;
+    background: #ededed;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    margin: right 1px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+
+}
+
+
+/* heading styles starts */
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+img {
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+
+figure {
+    margin: 20px;
+    padding: 0px 0px 10px 0px;
+    font-size: 40px;
+    background-color:#ededed;
+    border-radius: 20px;
+}
+
+
+
+span
+{
+    font-size: 20px;
+}
+
+figcaption
+{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+button
+{
+padding: 20px;
+font-size: 20px;
+border-radius: 20px;
+margin-top: 20px;
+background-color: cadetblue;
+cursor: pointer;
+border: transparent;
+color: white;
+}
+
+button:hover{
+    background-color: #808c91;
+box-shadow: 0px 0px 6px 1px white
+
+}
