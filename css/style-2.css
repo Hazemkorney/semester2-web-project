@@ -26,6 +26,9 @@
 section {
     display: flex;
     justify-content: center;
+    transform: matrix(600px);
+    transition: 0.5s;
+    overflow: hidden;
 
 }
 
@@ -74,3 +77,19 @@ button:hover{
 box-shadow: 0px 0px 6px 1px white
 
 }
+
+.secondradio
+{
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+    margin-bottom: 40px;
+
+}
+
+input {
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    accent-color: #FEC524;}
