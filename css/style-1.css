@@ -111,7 +111,7 @@ input[type="radio"]:checked {
 
 }
 
-button
+.submit
 {
     padding: 14px;
     font-size: 20px;
@@ -121,9 +121,23 @@ button
     cursor: pointer;
     color: white;
 }
+
+/* .Addnotherflight
+{
+    padding: 14px;
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: cadetblue;
+    transition: .5s;
+    cursor: pointer;
+    color: white;
+    margin-top: 15px;
+} */
+
 button:hover{
 background-color: #808c91;
 box-shadow: 0px 0px 6px 1px white
 
 }
+
 /* form styles ends */

@@ -1,6 +1,4 @@
-function onSelectForm(e) {
-    // debugger
-    // e.target.cheched = true;
+function onSelectPage(e) {
     showForm(e.target.value)
 }
 function showForm(selectedsection) {
@@ -16,4 +14,3 @@ function showForm(selectedsection) {
 onload = () => {
     showForm("page1")
 }
-// document.querySelector('input[value="form2]').checked = true;

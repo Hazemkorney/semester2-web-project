@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../css/rest.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/all.min.css">
-    <link rel="stylesheet" href="../css/fontawesome.min.css">
-    <link rel="stylesheet" href="../css/style-1.css"> 
-<script src="../js/script-1.js"></script>
+    <link rel="stylesheet" href="../css/style-1.css">
+    <title>Book Now</title>
 </head>
 
 <body>
@@ -42,14 +42,18 @@
                 </div>
             </div>
             <!-- form 1-->
-            <form action=" to Linkthe ticket page" id="form1" method="get">
+            <form onsubmit="saveFormDataOne(event , 'formData1')"  id="form1" method="get" autocomplete="off">
 
 
                 <div class="form">
+
                     <div class="from">
-                        <label>Leaving from</label>
+                        <label for="from">
+                            
+                          <span class="icon"><i class="fa-solid fa-earth-americas"></i></span>
+                            Leaving from</label>
                         <br><br>
-                        <input list="from" required placeholder="Leaving from" name="from" />
+                        <input list="from" required placeholder="Leaving from" name="from" id="from1" />
                         <datalist id="from">
                             <option value="Afghanistan" />
                             <option value="Albania" />
@@ -294,9 +298,11 @@
                     </div>
 
                     <div class="To">
-                        <label>Going to</label>
+                        <label for="To">
+                            <span class="icon"><i class="fa-solid fa-earth-americas"></i></span>
+                            Going to</label>
                         <br><br>
-                        <input list="To" required placeholder="Going to" name="To" />
+                        <input list="To" required placeholder="Going to" name="To" id="To1" />
                         <datalist id="To">
                             <option value="Afghanistan" />
                             <option value="Albania" />
@@ -541,37 +547,39 @@
                     </div>
 
                     <div class="Depart">
-                        <label for="Depart">Departing</label>
+                        <label for="Depart">
+                            <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
+                            Departing</label>
                         <br><br>
-                        <input type="date" required id="Depart" name="Depart ">
+                        <input type="date" required id="Depart1" name="Depart" >
                     </div>
 
 
                     <div class="Return">
-                        <label for="Return">Returning</label>
+                        <label for="Return">
+                            <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
+                            Returning</label>
                         <br><br>
-                        <input type="date" required id="Return" name="Return">
+                        <input type="date" required id="Return1" name="Return">
                     </div>
 
 
 
-                    <div class="Travellers ">
-                        <label>Travellers</label>
+                    <div class="Travellers">
+                        <label>
+                            <span class="icon"><i class="fa-solid fa-person"></i></span>
+                            Travellers</label>
                         <br><br>
-                        <input list="Travellers" required placeholder="Travellers" name="Travellers" />
-                        <datalist id="Travellers">
-                            <option value="Adulst" />
-                            <option value="Children" />
-                            <option value="Infant" />
-
-                        </datalist>
+                        <input type="number"  min="1" max="20" placeholder="Travellers" name="Travellers" id="Travellers1" >
                     </div>
 
 
                     <div class="class">
-                        <label>class </label>
+                        <label>
+                            <span class="icon"><i class="fa-solid fa-plane-up"></i></span>
+                            class </label>
                         <br><br>
-                        <input list="class" required placeholder="class" name="class" />
+                        <input list="class" required placeholder="class" name="class" id="class1" />
                         <datalist id="class">
                             <option value="Economy" />
                             <option value="First" />
@@ -579,19 +587,21 @@
 
                         </datalist>
                     </div>
-                    <button type="submit"> BOOK NOW</button>
+
+                    <button type="submit" class="submit" > BOOK NOW</button>
                 </div>
             </form>
-
             <!-- form 2-->
 
-            <form action="Link to the ticket page" id="form2" method="get">
+            <form onsubmit="saveFormDataTwo(event, 'formData2')"  id="form2" method="get" autocomplete="off">
 
                 <div class="form">
                     <div class="from">
-                        <label>Leaving from</label>
+                        <label for="from">
+                            <span class="icon"><i class="fa-solid fa-earth-americas"></i></span>
+                            Leaving from</label>
                         <br><br>
-                        <input list="from" required placeholder="Leaving from" name="from" />
+                        <input list="from" required placeholder="Leaving from" name="from" id="from2" />
                         <datalist id="from">
                             <option value="Afghanistan" />
                             <option value="Albania" />
@@ -836,9 +846,11 @@
                     </div>
 
                     <div class="To">
-                        <label>Going to</label>
+                        <label for="To">
+                            <span class="icon"><i class="fa-solid fa-earth-americas"></i></span>
+                            Going to</label>
                         <br><br>
-                        <input list="To" required placeholder="Going to" name="To" />
+                        <input list="To" required placeholder="Going to" name="To" id="To2" />
                         <datalist id="To">
                             <option value="Afghanistan" />
                             <option value="Albania" />
@@ -1083,27 +1095,28 @@
                     </div>
 
                     <div class="Depart">
-                        <label for="Depart">Departing</label>
+                        <label for="Depart">
+                            <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
+                            Departing</label>
                         <br><br>
-                        <input type="date" required id="Depart" name="Depart ">
+                        <input type="date" required id="Depart2" name="Depart ">
                     </div>
 
-                    <div class="Travellers ">
-                        <label>Travellers</label>
+                    <div class="Travellers">
+                        <label>
+                            <span class="icon"><i class="fa-solid fa-person"></i></span>
+                            Travellers</label>
                         <br><br>
-                        <input list="Travellers" required placeholder="Travellers" name="Travellers" />
-                        <datalist>
-                            <option value="Adulst" />
-                            <option value="Children" />
-                            <option value="Infant" />
-                        </datalist>
+                        <input type="number"  min="1" max="20" placeholder="Travellers" name="Travellers" id="Travellers2">
                     </div>
 
 
                     <div class="class">
-                        <label>class </label>
+                        <label>
+                            <span class="icon"><i class="fa-solid fa-plane-up"></i></span>
+                            class</label>
                         <br><br>
-                        <input list="class" required placeholder="class" name="class" />
+                        <input list="class" required placeholder="class" name="class" id="class2" />
                         <datalist>
                             <option value="Economy" />
                             <option value="First" />
@@ -1111,21 +1124,23 @@
 
                         </datalist>
                     </div>
-                    <button type="submit">BOOK NOW</button>
+
+                    <button type="submit" class="submit">BOOK NOW</button>
                 </div>
             </form>
-
             <!-- form 3-->
 
-            <form action="Link to the ticket page" id="form3" method="get">
+            <form onsubmit="saveFormDataThree(event, 'formData3')"  id="form3" method="get" autocomplete="off">
 
 
 
                 <div class="form">
                     <div class="from">
-                        <label>Leaving from</label>
+                        <label for="from">
+                            <span class="icon"><i class="fa-solid fa-earth-americas"></i></span>
+                            Leaving from</label>
                         <br><br>
-                        <input list="from" required placeholder="Leaving from" name="from" />
+                        <input list="from" required placeholder="Leaving from" name="from" id="from3" />
                         <datalist id="from">
                             <option value="Afghanistan" />
                             <option value="Albania" />
@@ -1370,9 +1385,11 @@
                     </div>
 
                     <div class="To">
-                        <label>Going to</label>
+                        <label for="To">
+                            <span class="icon"><i class="fa-solid fa-earth-americas"></i></span>
+                            Going to</label>
                         <br><br>
-                        <input list="To" required placeholder="Going to" name="To" />
+                        <input list="To" required placeholder="Going to" name="To" id="To3" />
                         <datalist id="To">
                             <option value="Afghanistan" />
                             <option value="Albania" />
@@ -1617,27 +1634,26 @@
                     </div>
 
                     <div class="Depart">
-                        <label for="Depart">Departing</label>
+                        <label for="Depart">
+                            <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
+                            Departing</label>
                         <br><br>
-                        <input type="date" required id="Depart" name="Depart ">
+                        <input type="date" required id="Depart3" name="Depart ">
                     </div>
 
                     <div class="Travellers ">
-                        <label>Travellers</label>
+                        <label>
+                            <span class="icon"><i class="fa-solid fa-person"></i></span>
+                            Travellers</label>
                         <br><br>
-                        <input list="Travellers" required placeholder="Travellers" name="Travellers" />
-                        <datalist>
-                            <option value="Adulst" />
-                            <option value="Children" />
-                            <option value="Infant" />
-                        </datalist>
+                        <input type="number"min="1" max="20" placeholder="Travellers" name="Travellers" id="Travellers3">
                     </div>
-
-
                     <div class="class">
-                        <label>class </label>
+                        <label>
+                            <span class="icon"><i class="fa-solid fa-plane-up"></i></span>
+                            class </label>
                         <br><br>
-                        <input list="class" required placeholder="class" name="class" />
+                        <input list="class" required placeholder="class" name="class" id="class3" />
                         <datalist>
                             <option value="Economy" />
                             <option value="First" />
@@ -1646,15 +1662,17 @@
                         </datalist>
                     </div>
 
-                    <button type="submit">BOOK NOW</button>
+                    <button type="submit" class="submit">BOOK NOW</button>
                 </div>
 
 
                 <div class="form">
                     <div class="from">
-                        <label>Leaving from</label>
+                        <label for="from">
+                            <span class="icon"><i class="fa-solid fa-earth-americas"></i></span>
+                            Leaving from</label>
                         <br><br>
-                        <input list="from" required placeholder="Leaving from" name="from" />
+                        <input list="from" required placeholder="Leaving from" name="from" id="from4" />
                         <datalist id="from">
                             <option value="Afghanistan" />
                             <option value="Albania" />
@@ -1899,9 +1917,11 @@
                     </div>
 
                     <div class="To">
-                        <label>Going to</label>
+                        <label for="To">
+                            <span class="icon"><i class="fa-solid fa-earth-americas"></i></span>
+                            Going to</label>
                         <br><br>
-                        <input list="To" required placeholder="Going to" name="To" />
+                        <input list="To" required placeholder="Going to" name="To" id="To4" />
                         <datalist id="To">
                             <option value="Afghanistan" />
                             <option value="Albania" />
@@ -2146,18 +2166,22 @@
                     </div>
 
                     <div class="Depart">
-                        <label for="Depart">Departing</label>
+                        <label for="Depart">
+                            <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
+                            Departing</label>
                         <br><br>
-                        <input type="date" required id="Depart" name="Depart ">
+                        <input type="date" required id="Depart4" name="Depart ">
                     </div>
                 </div>
 
 
-                <div class="form">
+                <div class="form" id="formadd">
                     <div class="from">
-                        <label>Leaving from</label>
+                        <label for="from">
+                            <span class="icon"><i class="fa-solid fa-earth-americas"></i></span>
+                            Leaving from</label>
                         <br><br>
-                        <input list="from" required placeholder="Leaving from" name="from" />
+                        <input list="from" required placeholder="Leaving from" name="from" id="from5" />
                         <datalist id="from">
                             <option value="Afghanistan" />
                             <option value="Albania" />
@@ -2402,9 +2426,11 @@
                     </div>
 
                     <div class="To">
-                        <label>Going to</label>
+                        <label for="To">
+                            <span class="icon"><i class="fa-solid fa-earth-americas"></i></span>
+                            Going to</label>
                         <br><br>
-                        <input list="To" required placeholder="Going to" name="To" />
+                        <input list="To" required placeholder="Going to" name="To" id="To5" />
                         <datalist id="To">
                             <option value="Afghanistan" />
                             <option value="Albania" />
@@ -2649,11 +2675,16 @@
                     </div>
 
                     <div class="Depart">
-                        <label for="Depart">Departing</label>
+                        <label for="Depart">
+                            <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
+                            Departing</label>
                         <br><br>
-                        <input type="date" required id="Depart" name="Depart ">
+                        <input type="date" required id="Depart5" name="Depart">
                     </div>
                 </div>
+
+
+              <!-- <button type="button" class="Addnotherflight"  value="formadd" onclick="Addnotherflight(event)">Add More</button> -->
 
             </form>
 
@@ -2662,6 +2693,7 @@
 
     </div>
 
+    <script src="../js/script-1.js"></script>
 </body>
 
 </html>

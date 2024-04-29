@@ -25,11 +25,7 @@
 
 section {
     display: flex;
-    justify-content: center;
-    transform: matrix(600px);
-    transition: 0.5s;
-    overflow: hidden;
-
+    justify-content: center;    
 }
 
 

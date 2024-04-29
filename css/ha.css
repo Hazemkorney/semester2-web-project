@@ -1,0 +1,22 @@
+body{
+    background-image: url(air8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+img{
+    width: 100%;
+}
+.td{
+    font-family: monospace;
+    color:rgb(0, 83, 248)
+    
+}
+
+#con{
+    text-align: center;
+    
+}
+table{
+    border:blue solid 1px;
+}
