@@ -11,6 +11,7 @@ body {
 
 }
 
+
 .heading span {
     font-size: 3.5rem;
     background: #008891;
@@ -20,6 +21,25 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 800;
 
+}
+@media screen and (max-width:767px) {
+    .heading{
+        padding: 12px;
+        padding-top: 30px;
+        margin: 0;
+    }
+    .heading span{
+        font-size: 2rem;
+    }
+    .heading .slogan-end{
+        display: inline-block;
+        margin-bottom: 22px;
+    
+    }
+    .heading .space{
+        display: none;
+    
+    }
 }
 
 .heading span.space {
@@ -36,6 +56,13 @@ body {
     padding: 10px;
     margin: 20px;
     border-radius: 20px;
+}
+@media screen and (max-width: 767px) {
+    .primaryradio{
+        margin: 0;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    }
 }
 
 .radio1,.radio2
@@ -61,6 +88,24 @@ body {
     display: flex; 
     align-items: flex-end;
 }
+@media screen and (max-width:767px) {
+    .form{
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    .form > div{
+        width:100%;
+    }
+    .form > div input{
+        width:100%;
+        box-sizing: border-box;
+    }
+    .form > button[type="submit"]{
+        margin-top: 20px;
+        width: 100%;
+    }
+}
 
 .from,
 .To,
@@ -83,6 +128,12 @@ body {
     background-size: cover;
     color: white;
 
+}
+
+@media screen and (max-width:767px) {
+    .form-container{
+        padding: 12px;
+    }
 }
 
 
