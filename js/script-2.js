@@ -16,5 +16,5 @@ onload = () => {
 }
 
 function myFunction() {
-  location.href = "https://www.w3schools.com";
+    location.href = "/pages/ticket2.html"
 }

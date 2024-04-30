@@ -45,7 +45,7 @@ function saveFormDataOne(event) {
 
     saveStorageByName("roundTrip" , formData1 );
     // Submit the form
-    event.target.submit();
+    location.href = "/pages/ticket1.html"
 
 }
 
@@ -71,7 +71,7 @@ function saveFormDataTwo(event) {
 
 
     // Submit the form
-    event.target.submit();
+    location.href = "/pages/ticket1.html"
 }
 
 
@@ -110,16 +110,14 @@ function saveFormDataThree(event) {
 
     saveStorageByName("multiCityTickets" , newTicket );
     // Submit the form
-    event.target.submit();
+    location.href = "/pages/ticket1.html"
 }
 
 
 function saveStorageByName(storageName , item ){
-    // Convert formData object to a JSON string
     const currentItems = JSON.parse(localStorage.getItem(storageName)) || []
     currentItems.push(item)
     localStorage.setItem(storageName, JSON.stringify(currentItems));
-
 }
 
 
