@@ -16,5 +16,5 @@ onload = () => {
 }
 
 function myFunction() {
-    location.href = "/pages/ticket2.html"
+    location.href = "/semester2-web-project/pages/ticket2.html"
 }

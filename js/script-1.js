@@ -43,9 +43,9 @@ function saveFormDataOne(event) {
         // Add other form fields as needed
     };
 
-    saveStorageByName("roundTrip" , formData1 );
+    saveStorageByName("roundTrip", formData1);
     // Submit the form
-    location.href = "/pages/ticket1.html"
+    location.href = "/semester2-web-project/pages/ticket1.html"
 
 }
 
@@ -67,11 +67,11 @@ function saveFormDataTwo(event) {
         // Add other form fields as needed
     };
 
-    saveStorageByName("oneWayTickets" , formData2 );
+    saveStorageByName("oneWayTickets", formData2);
 
 
     // Submit the form
-    location.href = "/pages/ticket1.html"
+    location.href = "/semester2-web-project/pages/ticket1.html"
 }
 
 
@@ -108,13 +108,13 @@ function saveFormDataThree(event) {
         // Add other form fields as needed
     };
 
-    saveStorageByName("multiCityTickets" , newTicket );
+    saveStorageByName("multiCityTickets", newTicket);
     // Submit the form
-    location.href = "/pages/ticket1.html"
+    location.href = "/semester2-web-project/pages/ticket1.html"
 }
 
 
-function saveStorageByName(storageName , item ){
+function saveStorageByName(storageName, item) {
     const currentItems = JSON.parse(localStorage.getItem(storageName)) || []
     currentItems.push(item)
     localStorage.setItem(storageName, JSON.stringify(currentItems));
