@@ -130,7 +130,7 @@ function saveFormDataThree(event) {
 
 
 // defined vriables
-let test1 = document.getElementById("test1")
+// let test1 = document.getElementById("test1")
 
 // Retrieve data from localStorage
 
@@ -157,7 +157,7 @@ if (formDataJSON1) {
     console.log('Travellers:', Travellers1);
     console.log('Class:', className1);
 
-    test1.innerHTML=from
+    // test1.innerHTML=from
  
 
 } else {
