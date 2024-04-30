@@ -6,18 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/style-1.css">
+    <link rel="stylesheet" href="../css/header.css">
+
     <title>Book Now</title>
 </head>
 
 <body>
+    <div class="hamed">
+        <header>
+            <nav class="nav">
+                <div id="p">
+                    <p>Flyout</p>
+                </div>
 
+                <div id="imges">
+                    <a href="../" class="i">Home</a>
+                    <a href="./packages.html" class="i">packages</a>
+                    <a href="#" class="i">BOOK</a>
+                    <a href="../#services" class="i">Services</a>
+                    <a href="../#gallery" class="i">Gallery</a>
+                    <a href="../#review" class="i">Review</a>
+                    <a href="../#weather" class="i">Weather Forecast</a>
+                    <a href="../#settings" class="d">Settings</a>
+                    <div class="k">
+                        <a href="#log" class="f">login</a>
+                    </div>
+                </div>
+
+            </nav>
+
+            <nav class="input">
+                <input type="text" id="sear" class="hide" placeholder="search">
+            </nav>
+
+
+
+        </header>
+    </div>
     <div class="container">
 
         <h1 class="heading">
             <span>B</span>
             <span>O</span>
             <span>O</span>
-            <span class="slogan-end" >K</span>
+            <span class="slogan-end">K</span>
             <span class="space"></span>
             <span>N</span>
             <span>O</span>
@@ -42,15 +74,15 @@
                 </div>
             </div>
             <!-- form 1-->
-            <form onsubmit="saveFormDataOne(event , 'formData1')"  id="form1" method="get" autocomplete="off">
+            <form onsubmit="saveFormDataOne(event , 'formData1')" id="form1" method="get" autocomplete="off">
 
 
                 <div class="form">
 
                     <div class="from">
                         <label for="from">
-                            
-                          <span class="icon"><i class="fa-solid fa-earth-americas"></i></span>
+
+                            <span class="icon"><i class="fa-solid fa-earth-americas"></i></span>
                             Leaving from</label>
                         <br><br>
                         <input list="from" required placeholder="Leaving from" name="from" id="from1" />
@@ -551,7 +583,7 @@
                             <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
                             Departing</label>
                         <br><br>
-                        <input type="date" required id="Depart1" name="Depart" >
+                        <input type="date" required id="Depart1" name="Depart">
                     </div>
 
 
@@ -570,7 +602,8 @@
                             <span class="icon"><i class="fa-solid fa-person"></i></span>
                             Travellers</label>
                         <br><br>
-                        <input type="number"  min="1" max="20" placeholder="Travellers" name="Travellers" id="Travellers1" >
+                        <input type="number" min="1" max="20" placeholder="Travellers" name="Travellers"
+                            id="Travellers1">
                     </div>
 
 
@@ -588,12 +621,12 @@
                         </datalist>
                     </div>
 
-                    <button type="submit" class="submit" > BOOK NOW</button>
+                    <button type="submit" class="submit"> BOOK NOW</button>
                 </div>
             </form>
             <!-- form 2-->
 
-            <form onsubmit="saveFormDataTwo(event, 'formData2')"  id="form2" method="get" autocomplete="off">
+            <form onsubmit="saveFormDataTwo(event, 'formData2')" id="form2" method="get" autocomplete="off">
 
                 <div class="form">
                     <div class="from">
@@ -1107,7 +1140,8 @@
                             <span class="icon"><i class="fa-solid fa-person"></i></span>
                             Travellers</label>
                         <br><br>
-                        <input type="number"  min="1" max="20" placeholder="Travellers" name="Travellers" id="Travellers2">
+                        <input type="number" min="1" max="20" placeholder="Travellers" name="Travellers"
+                            id="Travellers2">
                     </div>
 
 
@@ -1130,7 +1164,7 @@
             </form>
             <!-- form 3-->
 
-            <form onsubmit="saveFormDataThree(event, 'formData3')"  id="form3" method="get" autocomplete="off">
+            <form onsubmit="saveFormDataThree(event, 'formData3')" id="form3" method="get" autocomplete="off">
 
 
 
@@ -1646,7 +1680,8 @@
                             <span class="icon"><i class="fa-solid fa-person"></i></span>
                             Travellers</label>
                         <br><br>
-                        <input type="number"min="1" max="20" placeholder="Travellers" name="Travellers" id="Travellers3">
+                        <input type="number" min="1" max="20" placeholder="Travellers" name="Travellers"
+                            id="Travellers3">
                     </div>
                     <div class="class">
                         <label>
@@ -2684,7 +2719,7 @@
                 </div>
 
 
-              <!-- <button type="button" class="Addnotherflight"  value="formadd" onclick="Addnotherflight(event)">Add More</button> -->
+                <!-- <button type="button" class="Addnotherflight"  value="formadd" onclick="Addnotherflight(event)">Add More</button> -->
 
             </form>
 
