@@ -173,6 +173,9 @@ input[type="radio"]:checked {
     color: white;
 }
 
+.number{
+    min-width: 100px;
+}
 /* .Addnotherflight
 {
     padding: 14px;

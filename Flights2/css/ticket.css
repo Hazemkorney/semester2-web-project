@@ -1,8 +1,8 @@
 body{
-    background-image: url(ticket.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
- 
+background: url("/images/ticket.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
 }
 img{
     width: 100%;
@@ -23,5 +23,5 @@ table{
 a{
     display: block;
     text-decoration: none;
-    color: red;
+    color: red;
 }

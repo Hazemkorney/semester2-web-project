@@ -24,32 +24,26 @@ function saveFormDataOne(event) {
     event.preventDefault();
 
     // Get form input values
-    const from = document.getElementById('from1').value;
-    const To = document.getElementById('To1').value;
-    const Depart = document.getElementById('Depart1').value;
-    const Return = document.getElementById('Return1').value;
-    const Travellers = document.getElementById('Travellers1').value;
-    const className = document.getElementById('class1').value;
+    const from1 = document.getElementById('from1').value;
+    const To1 = document.getElementById('To1').value;
+    const Depart1 = document.getElementById('Depart1').value;
+    const Return1 = document.getElementById('Return1').value;
+    const Travellers1 = document.getElementById('Travellers1').value;
+    const className1 = document.getElementById('class1').value;
 
 
     // Create an object to hold form data
     const formData1 = {
-        from: from,
-        To: To,
-        Depart: Depart,
-        Return: Return,
-        Travellers: Travellers,
-        class: className,
+        from: from1,
+        To: To1,
+        Depart: Depart1,
+        Return: Return1,
+        Travellers: Travellers1,
+        class: className1,
         // Add other form fields as needed
     };
 
-
-    // Convert formData object to a JSON string
-    const formDataJSON1 = JSON.stringify(formData1);
-
-    // Save form data to localStorage
-    localStorage.setItem('formData1', formDataJSON1);
-
+    saveStorageByName("roundTrip" , formData1 );
     // Submit the form
     event.target.submit();
 
@@ -73,11 +67,8 @@ function saveFormDataTwo(event) {
         // Add other form fields as needed
     };
 
-    // Convert formData object to a JSON string
-    const formDataJSON2 = JSON.stringify(formData2);
+    saveStorageByName("oneWayTickets" , formData2 );
 
-    // Save form data to localStorage
-    localStorage.setItem('formData2', formDataJSON2);
 
     // Submit the form
     event.target.submit();
@@ -85,7 +76,6 @@ function saveFormDataTwo(event) {
 
 
 function saveFormDataThree(event) {
-    event.preventDefault(); // Prevent the form from submitting normally
 
     const from3 = document.getElementById('from3').value;
     const To3 = document.getElementById('To3').value;
@@ -101,7 +91,7 @@ function saveFormDataThree(event) {
     const To5 = document.getElementById('To5').value;
     const Depart5 = document.getElementById('Depart5').value;
 
-    const formData3 = {
+    const newTicket = {
         from1: from3,
         To1: To3,
         Depart1: Depart3,
@@ -118,51 +108,22 @@ function saveFormDataThree(event) {
         // Add other form fields as needed
     };
 
-    // Convert formData object to a JSON string
-    const formDataJSON3 = JSON.stringify(formData3);
-
-    // Save form data to localStorage
-    localStorage.setItem('formData3', formDataJSON3);
-
+    saveStorageByName("multiCityTickets" , newTicket );
     // Submit the form
     event.target.submit();
 }
 
 
-// defined vriables
-// let test1 = document.getElementById("test1")
+function saveStorageByName(storageName , item ){
+    // Convert formData object to a JSON string
+    const currentItems = JSON.parse(localStorage.getItem(storageName)) || []
+    currentItems.push(item)
+    localStorage.setItem(storageName, JSON.stringify(currentItems));
 
-// Retrieve data from localStorage
-
-const formDataJSON1 = localStorage.getItem('formData1');
-
-// Check if data exists in localStorage
-if (formDataJSON1) {
-    // Convert JSON string back to an object
-    const formData = JSON.parse(formDataJSON1);
-
-    // Access individual form fields
-    const from1 = formData.from;
-    const To1 = formData.To;
-    const Depart1 = formData.Depart;
-    const Return1 = formData.Return;
-    const Travellers1 = formData.Travellers;
-    const className1 = formData.class;
-
-    // Now you can use the data as needed
-    console.log('From:', from1);
-    console.log('To:', To1);
-    console.log('Depart:', Depart1);
-    console.log('Return:', Return1);
-    console.log('Travellers:', Travellers1);
-    console.log('Class:', className1);
-
-    // test1.innerHTML=from
- 
-
-} else {
-    console.log('No data found in localStorage.');
 }
+
+
+
 
 
 // function Addnotherflight(event){

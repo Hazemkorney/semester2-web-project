@@ -12,37 +12,7 @@
 </head>
 
 <body>
-    <div class="hamed">
-        <header>
-            <nav class="nav">
-                <div id="p">
-                    <p>Flyout</p>
-                </div>
-
-                <div id="imges">
-                    <a href="../" class="i">Home</a>
-                    <a href="./packages.html" class="i">packages</a>
-                    <a href="#" class="i">BOOK</a>
-                    <a href="../#services" class="i">Services</a>
-                    <a href="../#gallery" class="i">Gallery</a>
-                    <a href="../#review" class="i">Review</a>
-                    <a href="../#weather" class="i">Weather Forecast</a>
-                    <a href="../#settings" class="d">Settings</a>
-                    <div class="k">
-                        <a href="#log" class="f">login</a>
-                    </div>
-                </div>
-
-            </nav>
-
-            <nav class="input">
-                <input type="text" id="sear" class="hide" placeholder="search">
-            </nav>
-
-
-
-        </header>
-    </div>
+   
     <div class="container">
 
         <h1 class="heading">
@@ -74,8 +44,7 @@
                 </div>
             </div>
             <!-- form 1-->
-            <form onsubmit="saveFormDataOne(event , 'formData1')" id="form1" method="get" autocomplete="off">
-
+            <form onsubmit="event.preventDefault();saveFormDataOne(event)" action="/pages/ticket1.html"  id="form1" method="get" autocomplete="off">
 
                 <div class="form">
 
@@ -602,7 +571,7 @@
                             <span class="icon"><i class="fa-solid fa-person"></i></span>
                             Travellers</label>
                         <br><br>
-                        <input type="number" min="1" max="20" placeholder="Travellers" name="Travellers"
+                        <input type="number" class="number" min="1" max="20" placeholder="Travellers" name="Travellers"
                             id="Travellers1">
                     </div>
 
@@ -626,7 +595,7 @@
             </form>
             <!-- form 2-->
 
-            <form onsubmit="saveFormDataTwo(event, 'formData2')" id="form2" method="get" autocomplete="off">
+            <form onsubmit="event.preventDefault();saveFormDataTwo(event)" action="/pages/ticket1.html" id="form2" method="get" autocomplete="off">
 
                 <div class="form">
                     <div class="from">
@@ -1140,7 +1109,7 @@
                             <span class="icon"><i class="fa-solid fa-person"></i></span>
                             Travellers</label>
                         <br><br>
-                        <input type="number" min="1" max="20" placeholder="Travellers" name="Travellers"
+                        <input type="number" class="number" min="1" max="20" placeholder="Travellers" name="Travellers"
                             id="Travellers2">
                     </div>
 
@@ -1164,7 +1133,7 @@
             </form>
             <!-- form 3-->
 
-            <form onsubmit="saveFormDataThree(event, 'formData3')" id="form3" method="get" autocomplete="off">
+            <form onsubmit="event.preventDefault();saveFormDataThree(event)" action="/pages/ticket1.html" method="get" id="form3"  autocomplete="off">
 
 
 
@@ -1680,7 +1649,7 @@
                             <span class="icon"><i class="fa-solid fa-person"></i></span>
                             Travellers</label>
                         <br><br>
-                        <input type="number" min="1" max="20" placeholder="Travellers" name="Travellers"
+                        <input type="number" class="number" min="1" max="20" placeholder="Travellers" name="Travellers"
                             id="Travellers3">
                     </div>
                     <div class="class">

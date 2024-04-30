@@ -14,3 +14,7 @@ function showForm(selectedsection) {
 onload = () => {
     showForm("page1")
 }
+
+function myFunction() {
+  location.href = "https://www.w3schools.com";
+}
